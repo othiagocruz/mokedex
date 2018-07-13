@@ -9,7 +9,7 @@ const Navbar = props => {
 
   return (
     <nav className="grid-center">
-      <div className="col-7">
+      <div className="col-7_xs-10">
         <h1 className="col-12">Mokedex</h1>
         {props.pokemons.length === 0 && <span>Carregando lista...</span>}
         {props.pokemons.length !== 0 &&

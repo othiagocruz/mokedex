@@ -34,7 +34,7 @@ class View extends Component {
     const { name, sprites, types } = this.state.pokemon
     return (
       <div className="grid-center pokemon">
-        <div className="col-7">
+        <div className="col-7_xs-10">
           {this.state.pokemon === '' && <span>Carregando pokemon...</span>}
           {this.state.pokemon !== '' &&
             <dl>
