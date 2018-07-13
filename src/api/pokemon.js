@@ -13,7 +13,7 @@ export const listPokemons = cb => {
     .then(json => cb(json))
 }
 
-export const getById = (id, cb) => {
+export const getPokemonById = (id, cb) => {
   let payload = {
     method: 'GET',
     headers: {
@@ -22,7 +22,7 @@ export const getById = (id, cb) => {
     }
   }
 
-  return fetch(`${POKEMON_ENDPOINT}/${id}`, payload)
+  return fetch(`${POKEMON_ENDPOINT}/${id}/`, payload)
     .then(response => response.json())
     .then(json => cb(json))
 }
